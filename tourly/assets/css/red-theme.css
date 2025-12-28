@@ -1,0 +1,33 @@
+/* ============================= */
+/* NETFLIX RED BUTTON OVERRIDE */
+/* ============================= */
+
+button,
+.btn,
+a.btn,
+input[type="submit"] {
+  background-color: #e50914 !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+/* Hover effect */
+button:hover,
+.btn:hover,
+a.btn:hover,
+input[type="submit"]:hover {
+  background-color: #b20710 !important; /* Darker Netflix Red */
+  color: #ffffff !important;
+}
+
+/* Optional: outline buttons */
+.btn-outline {
+  border: 2px solid #e50914 !important;
+  background: transparent !important;
+  color: #e50914 !important;
+}
+
+.btn-outline:hover {
+  background: #e50914 !important;
+  color: #fff !important;
+}

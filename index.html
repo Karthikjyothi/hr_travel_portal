@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gateway Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <!-- LOGIN / SIGNUP BOX -->
+  <div class="login-container" id="authBox">
+
+    <h2 id="title">WELCOME TO <span>GATEWAY</span></h2>
+
+    <input type="text" id="username" placeholder="USER NAME">
+    <input type="password" id="password" placeholder="PASSWORD">
+
+    <!-- Signup extra field -->
+    <input type="password" id="confirmPassword" placeholder="CONFIRM PASSWORD" style="display:none;">
+
+    <button onclick="handleAuth()" id="actionBtn">LOGIN</button>
+
+    <p class="toggle-text">
+      <span id="toggleMsg">New user?</span>
+      <a href="#" onclick="toggleMode()">Sign up</a>
+    </p>
+
+  </div>
+
+  <img src="images/logo.png" alt="Company Logo" class="company-logo">
+
+  <div class="overlay"></div>
+  <!-- DASHBOARD -->
+  <div class="dashboard" id="dashboard">
+    <h2>Welcome to Gateway HR Portal</h2>
+    <button onclick="logout()">LOGOUT</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
