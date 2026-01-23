@@ -44,3 +44,63 @@ window.addEventListener("scroll", function () {
   }
 
 });
+function openRequestForm() {
+  document.getElementById("requestModal").style.display = "flex";
+}
+
+function closeRequestForm() {
+  document.getElementById("requestModal").style.display = "none";
+}
+
+document.getElementById("requestForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  closeRequestForm();
+
+  const banner = document.getElementById("successBanner");
+  banner.style.display = "block";
+
+  setTimeout(() => {
+    banner.style.display = "none";
+  }, 5000);
+
+  this.reset();
+});
+// View All Packages functionality
+document.getElementById("viewAllBtn").addEventListener("click", function () {
+  const hiddenPackages = document.querySelectorAll(".extra-package");
+
+  hiddenPackages.forEach(pkg => {
+    pkg.style.display = "block";
+  });
+
+  // Hide button after click
+  this.style.display = "none";
+});
+const packages = document.querySelectorAll(".package-item");
+
+packages.forEach((pkg, index) => {
+  if (index > 2) {
+    pkg.style.display = "none";
+  }
+});
+// HEADER NAVIGATION FUNCTIONS
+
+function goTo(id) {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+function focusSearch() {
+  const section = document.querySelector('.tour-search');
+  const input = document.getElementById('destination');
+
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+      if (input) input.focus();
+    }, 400);
+  }
+}

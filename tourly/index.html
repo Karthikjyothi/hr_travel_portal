@@ -39,121 +39,83 @@
 
   <header class="header" data-header>
 
-    <div class="overlay" data-overlay></div>
+  <div class="overlay" data-overlay></div>
 
-    <div class="header-top">
-      <div class="container">
+  <div class="header-top">
+    <div class="container">
 
-        <a href="tel:+01123456790" class="helpline-box">
+      <a href="tel:+01123456790" class="helpline-box">
+        <div class="icon-box">
+          <ion-icon name="call-outline"></ion-icon>
+        </div>
+        <div class="wrapper">
+          <p class="helpline-title">For Further Inquires :</p>
+          <p class="helpline-number">+01 (123) 4567 90</p>
+        </div>
+      </a>
 
-          <div class="icon-box">
-            <ion-icon name="call-outline"></ion-icon>
-          </div>
+      <a href="#" class="logo">
+        <img src="./assets/images/logo2.png" alt="Gateway logo">
+      </a>
 
-          <div class="wrapper">
-            <p class="helpline-title">For Further Inquires :</p>
+      <div class="header-btn-group">
 
-            <p class="helpline-number">+01 (123) 4567 90</p>
-          </div>
+        <!-- SEARCH -->
+        <button class="search-btn" aria-label="Search" onclick="focusSearch()">
+          <ion-icon name="search"></ion-icon>
+        </button>
 
-        </a>
+        <!-- MOBILE MENU -->
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
 
-        <a href="#" class="logo">
-          <img src="./assets/images/logo2.png" alt="Gateway logo">
-        </a>
+      </div>
+    </div>
+  </div>
 
-        <div class="header-btn-group">
+  <div class="header-bottom">
+    <div class="container">
 
-          <button class="search-btn" aria-label="Search">
-            <ion-icon name="search"></ion-icon>
+      <ul class="social-list">
+        <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+      </ul>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo2.png" alt="logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
           </button>
-
-          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-
         </div>
 
-      </div>
-    </div>
-
-    <div class="header-bottom">
-      <div class="container">
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
+        <!-- 🔥 WORKING NAV LINKS -->
+        <ul class="navbar-list">
+          <li><a class="navbar-link" data-nav-link onclick="goTo('home')">Home</a></li>
+          <li><a class="navbar-link" data-nav-link onclick="goTo('about')">About Us</a></li>
+          <li><a class="navbar-link" data-nav-link onclick="goTo('destination')">Destination</a></li>
+          <li><a class="navbar-link" data-nav-link onclick="goTo('package')">Packages</a></li>
+          <li><a class="navbar-link" data-nav-link onclick="goTo('gallery')">Gallery</a></li>
+          <li><a class="navbar-link" data-nav-link onclick="goTo('contact')">Contact Us</a></li>
         </ul>
 
-        <nav class="navbar" data-navbar>
+      </nav>
 
-          <div class="navbar-top">
+      <!-- BOOK NOW -->
+      <button class="btn btn-primary" onclick="goTo('inquiry-form')">
+        Book Now
+      </button>
 
-            <a href="#" class="logo">
-              <img src="./assets/images/logo2.png" alt="logo">
-            </a>
-
-            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </div>
-
-          <ul class="navbar-list">
-
-            <li>
-              <a href="#home" class="navbar-link" data-nav-link>home</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link" data-nav-link>about us</a>
-            </li>
-
-            <li>
-              <a href="#destination" class="navbar-link" data-nav-link>destination</a>
-            </li>
-
-            <li>
-              <a href="#package" class="navbar-link" data-nav-link>packages</a>
-            </li>
-
-            <li>
-              <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
-            </li>
-
-            <li>
-              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
-            </li>
-
-          </ul>
-
-        </nav>
-
-        <button class="btn btn-primary">Book Now</button>
-
-      </div>
     </div>
+  </div>
 
-  </header>
-
-
+</header>
 
 
 
@@ -252,111 +214,222 @@
 
           <ul class="popular-list">
 
-            <li>
-              <div class="popular-card">
+  <!-- EXISTING 1 -->
+  <li>
+    <div class="popular-card">
 
-                <figure class="card-img">
-                  <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
-                </figure>
+      <figure class="card-img">
+        <img src="./assets/images/popular-1.jpg" alt="Munnar, Kerala" loading="lazy">
+      </figure>
 
-                <div class="card-content">
+      <div class="card-content">
 
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
+        <div class="card-rating">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
 
-                  <p class="card-subtitle">
-                    <a href="#">Italy</a>
-                  </p>
+        <p class="card-subtitle">
+          <a href="#">India</a>
+        </p>
 
-                  <h3 class="h3 card-title">
-                    <a href="#">San miguel</a>
-                  </h3>
+        <h3 class="h3 card-title">
+          <a href="#">Munnar</a>
+        </h3>
 
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
+        <p class="card-text">
+          Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
+        </p>
 
-                </div>
+      </div>
 
-              </div>
-            </li>
+    </div>
+  </li>
 
-            <li>
-              <div class="popular-card">
+  <!-- EXISTING 2 -->
+  <li>
+    <div class="popular-card">
 
-                <figure class="card-img">
-                  <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
-                </figure>
+      <figure class="card-img">
+        <img src="./assets/images/popular-2.jpg" alt="Ladakh, India" loading="lazy">
+      </figure>
 
-                <div class="card-content">
+      <div class="card-content">
 
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
+        <div class="card-rating">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
 
-                  <p class="card-subtitle">
-                    <a href="#">Dubai</a>
-                  </p>
+        <p class="card-subtitle">
+          <a href="#">India</a>
+        </p>
 
-                  <h3 class="h3 card-title">
-                    <a href="#">Burj khalifa</a>
-                  </h3>
+        <h3 class="h3 card-title">
+          <a href="#">Ladakh</a>
+        </h3>
 
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
+        <p class="card-text">
+          Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
+        </p>
 
-                </div>
+      </div>
 
-              </div>
-            </li>
+    </div>
+  </li>
 
-            <li>
-              <div class="popular-card">
+  <!-- EXISTING 3 -->
+  <li>
+    <div class="popular-card">
 
-                <figure class="card-img">
-                  <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
-                </figure>
+      <figure class="card-img">
+        <img src="./assets/images/popular-3.jpg" alt="Araku valley, India" loading="lazy">
+      </figure>
 
-                <div class="card-content">
+      <div class="card-content">
 
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
+        <div class="card-rating">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
 
-                  <p class="card-subtitle">
-                    <a href="#">Japan</a>
-                  </p>
+        <p class="card-subtitle">
+          <a href="#">India</a>
+        </p>
 
-                  <h3 class="h3 card-title">
-                    <a href="#">Kyoto temple</a>
-                  </h3>
+        <h3 class="h3 card-title">
+          <a href="#">Araku valley</a>
+        </h3>
 
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
+        <p class="card-text">
+          Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
+        </p>
 
-                </div>
+      </div>
 
-              </div>
-            </li>
+    </div>
+  </li>
 
-          </ul>
+  <!-- ✅ NEW: MANALI -->
+  <li>
+    <div class="popular-card">
 
-          <button class="btn btn-primary">More destintion</button>
+      <figure class="card-img">
+        <img src="./assets/images/india-manali.jpg" alt="Manali, India" loading="lazy">
+      </figure>
+
+      <div class="card-content">
+
+        <div class="card-rating">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
+
+        <p class="card-subtitle">
+          <a href="#">India</a>
+        </p>
+
+        <h3 class="h3 card-title">
+          <a href="#">Manali</a>
+        </h3>
+
+        <p class="card-text">
+          Snow-capped mountains, adventure sports and scenic valleys.
+        </p>
+
+      </div>
+
+    </div>
+  </li>
+
+  <!-- ✅ NEW: GOA -->
+  <li>
+    <div class="popular-card">
+
+      <figure class="card-img">
+        <img src="./assets/images/india-goa.jpg" alt="Goa, India" loading="lazy">
+      </figure>
+
+      <div class="card-content">
+
+        <div class="card-rating">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
+
+        <p class="card-subtitle">
+          <a href="#">India</a>
+        </p>
+
+        <h3 class="h3 card-title">
+          <a href="#">Goa</a>
+        </h3>
+
+        <p class="card-text">
+          Beaches, nightlife, water sports and coastal beauty.
+        </p>
+
+      </div>
+
+    </div>
+  </li>
+
+  <!-- ✅ NEW: JAIPUR -->
+  <li>
+    <div class="popular-card">
+
+      <figure class="card-img">
+        <img src="./assets/images/india-jaipur.jpg" alt="Jaipur, India" loading="lazy">
+      </figure>
+
+      <div class="card-content">
+
+        <div class="card-rating">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+        </div>
+
+        <p class="card-subtitle">
+          <a href="#">India</a>
+        </p>
+
+        <h3 class="h3 card-title">
+          <a href="#">Jaipur</a>
+        </h3>
+
+        <p class="card-text">
+          Royal palaces, forts and rich cultural heritage.
+        </p>
+
+      </div>
+
+    </div>
+  </li>
+
+</ul>
+
+          <button class="btn btn-primary" onclick="openRequestForm()">
+  More Destination
+</button>
+
 
         </div>
       </section>
@@ -369,7 +442,7 @@
         - #PACKAGE
       -->
 
-      <section class="package" id="package">
+     <!-- <section class="package" id="package">
         <div class="container">
 
           <p class="section-subtitle">Popular Packeges</p>
@@ -382,242 +455,407 @@
             mollitia tenetur, aptent.
           </p>
 
-          <ul class="package-list">
+<ul class="package-list">
+
+  <!-- MANALI PACKAGE 
+  <li>
+    <div class="package-card">
+
+      <figure class="card-banner">
+        <img src="./assets/images/india-manali.jpg" alt="Manali Travel Package" loading="lazy">
+      </figure>
+
+      <div class="card-content">
+
+        <h3 class="h3 card-title">Manali Adventure & Snow Retreat</h3>
+
+        <p class="card-text">
+          Enjoy breathtaking Himalayan views, snow activities, river rafting and peaceful valleys.
+          Ideal for couples and adventure lovers.
+        </p>
 
-            <li>
-              <div class="package-card">
+        <ul class="card-meta-list">
 
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
-                </figure>
+          <li class="card-meta-item">
+            <div class="meta-box">
+              <ion-icon name="time"></ion-icon>
+              <p class="text">5D / 4N</p>
+            </div>
+          </li>
+
+          <li class="card-meta-item">
+            <div class="meta-box">
+              <ion-icon name="people"></ion-icon>
+              <p class="text">Pax: 6</p>
+            </div>
+          </li>
+
+          <li class="card-meta-item">
+            <div class="meta-box">
+              <ion-icon name="location"></ion-icon>
+              <p class="text">Manali, India</p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="card-price">
+
+        <div class="wrapper">
+          <p class="reviews">(42 reviews)</p>
+          <div class="card-rating">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+        </div>
 
-                <div class="card-content">
+        <p class="price">
+          ₹18,500
+          <span>/ per person</span>
+        </p>
 
-                  <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
+        <button class="btn btn-secondary">Book Now</button>
+
+      </div>
 
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
+    </div>
+  </li>
+
+  <!-- GOA PACKAGE
+  <li>
+    <div class="package-card">
+
+      <figure class="card-banner">
+        <img src="./assets/images/india-goa.jpg" alt="Goa Travel Package" loading="lazy">
+      </figure>
+
+      <div class="card-content">
+
+        <h3 class="h3 card-title">Goa Beach & Leisure Escape</h3>
+
+        <p class="card-text">
+          Relax on golden beaches, enjoy nightlife, water sports and scenic coastal views.
+          Perfect for friends and couples.
+        </p>
 
-                  <ul class="card-meta-list">
+        <ul class="card-meta-list">
+
+          <li class="card-meta-item">
+            <div class="meta-box">
+              <ion-icon name="time"></ion-icon>
+              <p class="text">4D / 3N</p>
+            </div>
+          </li>
+
+          <li class="card-meta-item">
+            <div class="meta-box">
+              <ion-icon name="people"></ion-icon>
+              <p class="text">Pax: 8</p>
+            </div>
+          </li>
+
+          <li class="card-meta-item">
+            <div class="meta-box">
+              <ion-icon name="location"></ion-icon>
+              <p class="text">Goa, India</p>
+            </div>
+          </li>
+
+        </ul>
 
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
+      </div>
 
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
+      <div class="card-price">
 
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
+        <div class="wrapper">
+          <p class="reviews">(58 reviews)</p>
+          <div class="card-rating">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+        </div>
 
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
+        <p class="price">
+          ₹15,200
+          <span>/ per person</span>
+        </p>
 
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
+        <button class="btn btn-secondary">Book Now</button>
 
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
+      </div>
 
-                  </ul>
+    </div>
+  </li>
 
-                </div>
+  <!-- JAIPUR PACKAGE
+  <li>
+    <div class="package-card">
 
-                <div class="card-price">
+      <figure class="card-banner">
+        <img src="./assets/images/india-jaipur.jpg" alt="Jaipur Travel Package" loading="lazy">
+      </figure>
 
-                  <div class="wrapper">
+      <div class="card-content">
 
-                    <p class="reviews">(25 reviews)</p>
+        <h3 class="h3 card-title">Jaipur Royal Heritage Tour</h3>
 
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
+        <p class="card-text">
+          Explore majestic forts, royal palaces, local markets and rich Rajasthani culture.
+          Best for history and culture enthusiasts.
+        </p>
 
-                  </div>
+        <ul class="card-meta-list">
 
-                  <p class="price">
-                    $750
-                    <span>/ per person</span>
-                  </p>
+          <li class="card-meta-item">
+            <div class="meta-box">
+              <ion-icon name="time"></ion-icon>
+              <p class="text">3D / 2N</p>
+            </div>
+          </li>
 
-                  <button class="btn btn-secondary">Book Now</button>
+          <li class="card-meta-item">
+            <div class="meta-box">
+              <ion-icon name="people"></ion-icon>
+              <p class="text">Pax: 5</p>
+            </div>
+          </li>
 
-                </div>
+          <li class="card-meta-item">
+            <div class="meta-box">
+              <ion-icon name="location"></ion-icon>
+              <p class="text">Jaipur, India</p>
+            </div>
+          </li>
 
-              </div>
-            </li>
+        </ul>
 
-            <li>
-              <div class="package-card">
+      </div>
 
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
-                </figure>
+      <div class="card-price">
 
-                <div class="card-content">
+        <div class="wrapper">
+          <p class="reviews">(36 reviews)</p>
+          <div class="card-rating">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </div>
+        </div>
 
-                  <h3 class="h3 card-title">Summer Holiday To The Oxolotan River</h3>
+        <p class="price">
+          ₹11,800
+          <span>/ per person</span>
+        </p>
 
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
+        <button class="btn btn-secondary">Book Now</button>
 
-                  <ul class="card-meta-list">
+      </div>
 
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
+    </div>
+  </li>
 
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
+</ul>
 
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(20 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $520
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(40 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $660
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
 
           <button class="btn btn-primary">View All Packages</button>
+
+        </div>
+      </section>-->
+<section class="package" id="package">
+  <div class="container">
+
+    <p class="section-subtitle">Popular Packages</p>
+    <h2 class="h2 section-title">Checkout Our Packages</h2>
+
+    <ul class="package-list">
+
+  <!-- ===== DEFAULT PACKAGES (VISIBLE) ===== -->
+
+  <!-- MUNNAR -->
+  <li class="package-item default-package">
+    <div class="package-card">
+      <figure class="card-banner">
+        <img src="./assets/images/popular-1.jpg" alt="Munnar Package">
+      </figure>
+
+      <div class="card-content">
+        <h3 class="h3 card-title">Munnar Hill Retreat</h3>
+        <p class="card-text">
+          Tea plantations, misty hills, waterfalls and peaceful climate.
+        </p>
+
+        <ul class="card-meta-list">
+          <li class="card-meta-item"><ion-icon name="time"></ion-icon> 4D / 3N</li>
+          <li class="card-meta-item"><ion-icon name="people"></ion-icon> Pax: 6</li>
+          <li class="card-meta-item"><ion-icon name="location"></ion-icon> Munnar, India</li>
+        </ul>
+      </div>
+
+      <div class="card-price">
+        <p class="price">₹12,500 <span>/ person</span></p>
+        <button class="btn btn-secondary">Book Now</button>
+      </div>
+    </div>
+  </li>
+
+  <!-- LADAKH -->
+  <li class="package-item default-package">
+    <div class="package-card">
+      <figure class="card-banner">
+        <img src="./assets/images/popular-2.jpg" alt="Ladakh Package">
+      </figure>
+
+      <div class="card-content">
+        <h3 class="h3 card-title">Ladakh Adventure Tour</h3>
+        <p class="card-text">
+          Pangong Lake, monasteries, bike rides & high-altitude thrills.
+        </p>
+
+        <ul class="card-meta-list">
+          <li class="card-meta-item"><ion-icon name="time"></ion-icon> 6D / 5N</li>
+          <li class="card-meta-item"><ion-icon name="people"></ion-icon> Pax: 8</li>
+          <li class="card-meta-item"><ion-icon name="location"></ion-icon> Ladakh, India</li>
+        </ul>
+      </div>
+
+      <div class="card-price">
+        <p class="price">₹22,000 <span>/ person</span></p>
+        <button class="btn btn-secondary">Book Now</button>
+      </div>
+    </div>
+  </li>
+
+  <!-- ARAKU -->
+  <li class="package-item default-package">
+    <div class="package-card">
+      <figure class="card-banner">
+        <img src="./assets/images/popular-3.jpg" alt="Araku Valley Package">
+      </figure>
+
+      <div class="card-content">
+        <h3 class="h3 card-title">Araku Valley Escape</h3>
+        <p class="card-text">
+          Coffee plantations, waterfalls and tribal culture.
+        </p>
+
+        <ul class="card-meta-list">
+          <li class="card-meta-item"><ion-icon name="time"></ion-icon> 3D / 2N</li>
+          <li class="card-meta-item"><ion-icon name="people"></ion-icon> Pax: 5</li>
+          <li class="card-meta-item"><ion-icon name="location"></ion-icon> Araku, India</li>
+        </ul>
+      </div>
+
+      <div class="card-price">
+        <p class="price">₹9,800 <span>/ person</span></p>
+        <button class="btn btn-secondary">Book Now</button>
+      </div>
+    </div>
+  </li>
+
+  <!-- ===== EXTRA PACKAGES (HIDDEN INITIALLY) ===== -->
+
+  <!-- MANALI -->
+  <li class="package-item extra-package">
+    <div class="package-card">
+      <figure class="card-banner">
+        <img src="./assets/images/india-manali.jpg" alt="Manali Package">
+      </figure>
+
+      <div class="card-content">
+        <h3 class="h3 card-title">Manali Snow Adventure</h3>
+        <p class="card-text">
+          Snow sports, river rafting and scenic Himalayan valleys.
+        </p>
+
+        <ul class="card-meta-list">
+          <li class="card-meta-item"><ion-icon name="time"></ion-icon> 5D / 4N</li>
+          <li class="card-meta-item"><ion-icon name="people"></ion-icon> Pax: 6</li>
+          <li class="card-meta-item"><ion-icon name="location"></ion-icon> Manali, India</li>
+        </ul>
+      </div>
+
+      <div class="card-price">
+        <p class="price">₹18,500 <span>/ person</span></p>
+        <button class="btn btn-secondary">Book Now</button>
+      </div>
+    </div>
+  </li>
+
+  <!-- GOA -->
+  <li class="package-item extra-package">
+    <div class="package-card">
+      <figure class="card-banner">
+        <img src="./assets/images/india-goa.jpg" alt="Goa Package">
+      </figure>
+
+      <div class="card-content">
+        <h3 class="h3 card-title">Goa Beach Holiday</h3>
+        <p class="card-text">
+          Beaches, nightlife, water sports and coastal vibes.
+        </p>
+
+        <ul class="card-meta-list">
+          <li class="card-meta-item"><ion-icon name="time"></ion-icon> 4D / 3N</li>
+          <li class="card-meta-item"><ion-icon name="people"></ion-icon> Pax: 8</li>
+          <li class="card-meta-item"><ion-icon name="location"></ion-icon> Goa, India</li>
+        </ul>
+      </div>
+
+      <div class="card-price">
+        <p class="price">₹15,200 <span>/ person</span></p>
+        <button class="btn btn-secondary">Book Now</button>
+      </div>
+    </div>
+  </li>
+
+  <!-- JAIPUR -->
+  <li class="package-item extra-package">
+    <div class="package-card">
+      <figure class="card-banner">
+        <img src="./assets/images/india-jaipur.jpg" alt="Jaipur Package">
+      </figure>
+
+      <div class="card-content">
+        <h3 class="h3 card-title">Jaipur Royal Heritage</h3>
+        <p class="card-text">
+          Forts, palaces, markets and rich Rajasthani culture.
+        </p>
+
+        <ul class="card-meta-list">
+          <li class="card-meta-item"><ion-icon name="time"></ion-icon> 3D / 2N</li>
+          <li class="card-meta-item"><ion-icon name="people"></ion-icon> Pax: 5</li>
+          <li class="card-meta-item"><ion-icon name="location"></ion-icon> Jaipur, India</li>
+        </ul>
+      </div>
+
+      <div class="card-price">
+        <p class="price">₹11,800 <span>/ person</span></p>
+        <button class="btn btn-secondary">Book Now</button>
+      </div>
+    </div>
+  </li>
+
+</ul>
+<button class="btn btn-primary" id="viewAllBtn">
+  View All Packages
+</button>
+
 
         </div>
       </section>
 
 
-
-
-
-      <!-- 
+<!-- 
         - #GALLERY
       -->
 
@@ -672,9 +910,6 @@
       </section>
 
 
-
-
-
       <!-- 
         - #CTA
       -->
@@ -700,6 +935,46 @@
       </section>
 
     </article>
+    <!-- REQUEST DESTINATION FORM MODAL -->
+<div class="request-modal" id="requestModal">
+
+  <div class="request-card">
+
+    <h2 class="h2 section-title">Request a Destination</h2>
+    <p class="section-text">Tell us your travel preference and budget</p>
+
+    <form id="requestForm">
+
+      <input type="text" placeholder="Employee Name" required>
+      <input type="email" placeholder="Email ID" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="text" placeholder="Preferred Destination" required>
+
+      <div class="form-row">
+        <input type="number" placeholder="No. of People" required>
+        <input type="number" placeholder="Estimated Budget (₹)" required>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-secondary">Submit Request</button>
+        <button type="button" class="btn btn-outline" onclick="closeRequestForm()">Cancel</button>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+<!-- SUCCESS BANNER -->
+<div class="success-banner" id="successBanner">
+  <p>
+    ✅ Your request is being reviewed.  
+    Our team will mail you regarding further updates.  
+    <strong>Thank you!</strong>
+  </p>
+</div>
+
   </main>
 
 
